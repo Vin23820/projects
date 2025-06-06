@@ -1,0 +1,109 @@
+/* === Global Styles === */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #e8f0ff, #ffffff);
+    margin: 0;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+}
+
+/* === Headings === */
+h1, h2 {
+    margin-bottom: 20px;
+    color: #222;
+}
+
+/* === Form Styling === */
+form {
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+form input,
+form select {
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    transition: border 0.3s;
+}
+
+form input:focus,
+form select:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* === Button Styling === */
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.03);
+}
+
+/* === Report Page === */
+ul {
+    list-style: none;
+    padding: 0;
+    width: 350px;
+}
+
+li {
+    background-color: #ffffff;
+    border-left: 8px solid #007BFF;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+    font-size: 15px;
+}
+
+li.income {
+    border-left-color: #28a745;
+    background-color: #eafaf0;
+}
+
+li.expense {
+    border-left-color: #dc3545;
+    background-color: #fff0f0;
+}
+
+/* === Link Styling === */
+a {
+    text-decoration: none;
+    color: #007BFF;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+ /* === Responsive Adjustments === */ 
+@media (max-width: 500px) {
+    form, ul {
+        width: 90%;
+    }
+}

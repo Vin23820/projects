@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Report</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Financial Report</h1>
+    <p>Total Income: {{ income }}</p>
+    <p>Total Expenses: {{ expense }}</p>
+    <p>Savings: {{ savings }}</p>
+
+    <h2>Transactions</h2>
+    <ul>
+        {% for t in transactions %}
+        <li class="{{ t.type }}">{{ t.date }} - {{ t.category }} - {{ t.type }} - ₹{{ t.amount }}</li>
+
+        {% endfor %}
+    </ul>
+
+    <a href="/">Add More</a>
+</body>
+</html>

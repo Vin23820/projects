@@ -1,0 +1,20 @@
+[
+    {
+        "amount": 10000.0,
+        "category": "rent",
+        "type": "expense",
+        "date": "2025-06-06"
+    },
+    {
+        "amount": 500.0,
+        "category": "food",
+        "type": "expense",
+        "date": "2025-06-06"
+    },
+    {
+        "amount": 10000.0,
+        "category": "rapido",
+        "type": "income",
+        "date": "2025-06-05"
+    }
+]
